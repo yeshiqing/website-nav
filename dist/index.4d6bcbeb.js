@@ -532,20 +532,15 @@ function hmrAcceptRun(bundle, id) {
 }
 
 },{}],"gLLPy":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-var _bilibiliPng = require("./images/bilibili.png");
-var _bilibiliPngDefault = parcelHelpers.interopDefault(_bilibiliPng);
 let dataWebsite = localStorage.getItem("dataWebsite") || null;
 let arrHashMap = JSON.parse(dataWebsite) || [
     {
         logo: "A",
-        logoType: "text",
         url: "https://www.acfun.cn",
         domain: "acfun.cn"
     },
     {
-        logo: (0, _bilibiliPngDefault.default),
-        logoType: "img",
+        logo: "B",
         url: "https://www.bilibili.com",
         domain: "bilibili.com"
     }
@@ -590,73 +585,6 @@ $(".addButton").on("click", (e)=>{
 window.onbeforeunload = ()=>{
     localStorage.setItem("dataWebsite", JSON.stringify(arrHashMap));
 };
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"l2HTo","./images/bilibili.png":"lb7pl"}],"l2HTo":[function(require,module,exports) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, "__esModule", {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === "default" || key === "__esModule" || dest.hasOwnProperty(key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
-
-},{}],"lb7pl":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("gnRNX") + "bilibili.26d07d2d.png" + "?" + Date.now();
-
-},{"./helpers/bundle-url":"cy6Ki"}],"cy6Ki":[function(require,module,exports) {
-"use strict";
-var bundleURL = {};
-function getBundleURLCached(id) {
-    var value = bundleURL[id];
-    if (!value) {
-        value = getBundleURL();
-        bundleURL[id] = value;
-    }
-    return value;
-}
-function getBundleURL() {
-    try {
-        throw new Error();
-    } catch (err) {
-        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
-        if (matches) // The first two stack frames will be this function and getBundleURLCached.
-        // Use the 3rd one, which will be a runtime in the original bundle.
-        return getBaseURL(matches[2]);
-    }
-    return "/";
-}
-function getBaseURL(url) {
-    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
-} // TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
-function getOrigin(url) {
-    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
-    if (!matches) throw new Error("Origin not found");
-    return matches[0];
-}
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-exports.getOrigin = getOrigin;
 
 },{}]},["7okX0","gLLPy"], "gLLPy", "parcelRequire94c2")
 
