@@ -7,13 +7,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/yeshiqing/website-nav.git\".git"
+    "url": "git@github.com/yeshiqing/website-nav.git"
   },
   "keywords": [
     "navigation",
     "website"
   ],
-  "author": "\"yeshiqing <jeffreyye@qq.com>",
+  "author": "yeshiqing <jeffreyye@qq.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/yeshiqing/website-nav.git/issues"
