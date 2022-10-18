@@ -95,5 +95,8 @@ $(document).on("keypress", (e)=>{
         }
     }
 });
+$(".searchBox").on("keypress", (e)=>{
+    e.stopPropagation();
+});
 
-//# sourceMappingURL=index.ac427fe5.js.map
+//# sourceMappingURL=index.5d9de7bd.js.map
