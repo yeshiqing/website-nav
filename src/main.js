@@ -1,7 +1,11 @@
 let dataWebsite = localStorage.getItem("dataWebsite") || null
 let arrHashMap = JSON.parse(dataWebsite) || [
     { logo: "A", url: "https://www.acfun.cn", domain: "acfun.cn" },
-    { logo: "B", url: "https://www.bilibili.com", domain: "bilibili.com" }
+    { logo: "B", url: "https://www.bilibili.com", domain: "bilibili.com" },
+    { logo: "G", url: "https://github.com", domain: "github.com" },
+    { logo: "L", url: "https://wangchujiang.com/linux-command", domain: "linux-command" },
+    { logo: "V", url: "https://www.v2ex.com", domain: "v2ex.com" },
+    { logo: "Z", url: "https://www.zhihu.com", domain: "zhihu.com" }
 ]
 let $lastLi = $('.siteList li:last')
 

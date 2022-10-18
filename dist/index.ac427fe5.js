@@ -9,6 +9,26 @@ let arrHashMap = JSON.parse(dataWebsite) || [
         logo: "B",
         url: "https://www.bilibili.com",
         domain: "bilibili.com"
+    },
+    {
+        logo: "G",
+        url: "https://github.com",
+        domain: "github.com"
+    },
+    {
+        logo: "L",
+        url: "https://wangchujiang.com/linux-command",
+        domain: "linux-command"
+    },
+    {
+        logo: "V",
+        url: "https://www.v2ex.com",
+        domain: "v2ex.com"
+    },
+    {
+        logo: "Z",
+        url: "https://www.zhihu.com",
+        domain: "zhihu.com"
     }
 ];
 let $lastLi = $(".siteList li:last");
@@ -76,4 +96,4 @@ $(document).on("keypress", (e)=>{
     }
 });
 
-//# sourceMappingURL=index.e0001c2d.js.map
+//# sourceMappingURL=index.ac427fe5.js.map

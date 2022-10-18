@@ -68,8 +68,11 @@ body {
     border: none;
     height: 40px;
     font-size: 20px;
+    cursor: pointer;
 }
-
+.searchForm > button:hover {
+    background-color: #2288d0;
+}
 .globalMain {
     margin-left: 20px;
     margin-right: 20px;
@@ -186,5 +189,7 @@ body {
 }
 .siteList .addButton .text {
     text-align: center;
-    margin-top: 8px;
+    margin-top: 4px;
+    font-size: 14px;
+    letter-spacing: 2px;
 }
