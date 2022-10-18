@@ -8,7 +8,7 @@
 }
 
 ul, ol {
-  list-style: none;
+  list-style-type: none;
 }
 
 img {
@@ -70,54 +70,50 @@ body {
 }
 
 .globalMain {
-  margin: 0 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  overflow-x: hidden;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 480px) {
   .globalMain {
-    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 545px) {
+  .globalMain {
+    max-width: 375px;
+  }
+}
+
+@media (min-width: 546px) and (max-width: 730px) {
+  .globalMain {
+    max-width: 530px;
+  }
+}
+
+@media (min-width: 731px) and (max-width: 915px) {
+  .globalMain {
+    max-width: 715px;
+  }
+}
+
+@media (min-width: 916px) {
+  .globalMain {
+    max-width: 900px;
   }
 }
 
 .siteList {
   flex-wrap: wrap;
   justify-content: start;
+  margin-right: -15px;
   display: flex;
 }
 
-@media (max-width: 500px) {
-  .siteList {
-    margin-right: -15px;
-  }
-}
-
-@media (min-width: 500px) and (max-width: 555px) {
-  .siteList {
-    width: 370px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media (min-width: 555px) and (max-width: 740px) {
-  .siteList {
-    width: 555px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media (min-width: 740px) and (max-width: 925px) {
-  .siteList {
-    width: 740px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media (min-width: 925px) {
+@media (min-width: 500px) {
   .siteList {
     margin-right: -25px;
   }
@@ -125,17 +121,23 @@ body {
 
 .siteList > li {
   margin-bottom: 10px;
+  margin-right: 15px;
 }
 
-@media (max-width: 500px) {
+@media (min-width: 480px) {
   .siteList > li {
-    margin-right: 15px;
+    margin-right: 25px;
   }
 }
 
-@media (min-width: 500px) {
+@media (min-width: 481px) and (max-width: 545px) {
   .siteList > li {
-    margin-right: 25px;
+    margin-bottom: 20px;
+    margin-right: 55px;
+  }
+
+  .siteList {
+    margin-right: -55px;
   }
 }
 
@@ -173,9 +175,20 @@ body {
 }
 
 .siteList .site > .close {
+  opacity: 0;
+  cursor: default;
+  transition: all .5s;
   position: absolute;
   top: 5px;
   right: 10px;
+}
+
+.siteList .site > .close:hover {
+  box-shadow: 0 0 5px #ccc;
+}
+
+.siteList li:hover .close {
+  opacity: 1;
 }
 
 .siteList .addButton .icon {
@@ -188,4 +201,4 @@ body {
   margin-top: 8px;
 }
 
-/*# sourceMappingURL=index.2cdaf7bc.css.map */
+/*# sourceMappingURL=index.38876588.css.map */

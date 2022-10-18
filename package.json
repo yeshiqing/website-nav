@@ -1,0 +1,22 @@
+{
+  "name": "website-nav",
+  "version": "1.0.0",
+  "description": "the navigation of commonly used website",
+  "scripts": {
+    "build": "rm -rf dist && parcel build src/index.html --no-optimize --public-url './'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/yeshiqing/website-nav.git\".git"
+  },
+  "keywords": [
+    "navigation",
+    "website"
+  ],
+  "author": "\"yeshiqing <jeffreyye@qq.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yeshiqing/website-nav.git/issues"
+  },
+  "homepage": "https://github.com/yeshiqing/website-nav.git#readme"
+}

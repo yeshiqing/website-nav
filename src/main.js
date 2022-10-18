@@ -11,7 +11,6 @@ let simplifyDomain = (url) => {
     return url.match(REG_URL)[1]
 }
 
-let map_close2Index = new Map()
 {
     // 事件委托
     $('.siteList').on('click', '.close', (e) => {
@@ -73,3 +72,14 @@ window.onbeforeunload = () => {
     let str_data = JSON.stringify(arrHashMap)
     localStorage.setItem("dataWebsite", str_data)
 }
+
+$(document).on('keypress', (e) => {
+    let { key } = e
+    for (let i = 0; i < arrHashMap.length; i++) {
+        let data = arrHashMap[i]
+        if (key === data.logo.toLowerCase()) {
+            window.open(data.url)
+            break;
+        }
+    }
+})
